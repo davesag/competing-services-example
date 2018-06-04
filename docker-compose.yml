@@ -1,6 +1,5 @@
 version: "3"
 volumes:
-  # We'll define a volume that will store the data from the postgres databases:
   rabbit-data:
     driver: local
 
