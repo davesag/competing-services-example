@@ -22,7 +22,6 @@
   "scripts": {
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint": "eslint .",
-    "precommit": "lint-staged",
     "prettier": "prettier --single-quote --no-semi --write '**/*.{js,json}'",
     "start": "node src/index.js",
     "backend": "docker-compose up -d amqp",
@@ -89,5 +88,10 @@
   "homepage": "https://github.com/davesag/competing-services-example#README",
   "dependencies": {
     "amqp-simple-pub-sub": "^1.0.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
