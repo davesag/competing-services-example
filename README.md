@@ -15,6 +15,8 @@ A simple example of how to use the AMQP-Simple-PubSub library to implement compe
 
     npm start
 
+You can `crtl-c` when you get tired of watching it.
+
 ## Development
 
 ### Prerequisites
