@@ -8,7 +8,7 @@ describe('src/ImageOCR/makeHandler', () => {
     ack: sinon.spy()
   }
   const content = JSON.stringify({
-    meta: 'This is a test'
+    text: 'This is a test'
   })
 
   before(async () => {
