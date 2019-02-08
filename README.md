@@ -17,6 +17,8 @@ A simple example of how to use the [`amqp-simple-pub-sub`](https://github.com/da
 
 ## To Run
 
+Clone this repo to your local machine, then, from within the project folder:
+
 ```
 docker-compose up -d
 
