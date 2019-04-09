@@ -19,10 +19,15 @@
     "microservices",
     "micro-services"
   ],
+  "repository": "https://github.com/davesag/competing-services-example.git",
+  "bugs": {
+    "url": "https://github.com/davesag/competing-services-example/issues"
+  },
+  "homepage": "https://github.com/davesag/competing-services-example#README",
   "scripts": {
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint": "eslint .",
-    "prettier": "prettier --single-quote --no-semi --write '**/*.{js,json}'",
+    "prettier": "prettier --write '**/*.{js,json,md}'",
     "start": "node src/index.js",
     "backend": "docker-compose up -d amqp",
     "test": "npm run test:unit",
@@ -30,31 +35,8 @@
     "test:unit": "find ./test/unit -name '*_spec.js' | NODE_ENV=test xargs mocha --require ./test/unit/test_helper.js",
     "test:unit:cov": "find ./test/unit -name '*_spec.js' | NODE_ENV=test xargs nyc mocha --require ./test/unit/test_helper.js"
   },
-  "lint-staged": {
-    "**/*.{js,json}": [
-      "prettier --single-quote --no-semi --write",
-      "git add"
-    ]
-  },
-  "nyc": {
-    "check-coverage": true,
-    "per-file": true,
-    "lines": 100,
-    "statements": 100,
-    "functions": 100,
-    "branches": 100,
-    "include": [
-      "src/**/*.js"
-    ],
-    "exclude": [
-      "src/index.js"
-    ],
-    "reporter": [
-      "lcov",
-      "text"
-    ],
-    "all": true,
-    "cache": true
+  "dependencies": {
+    "amqp-simple-pub-sub": "^1.0.8"
   },
   "devDependencies": {
     "ajv": "^6.10.0",
@@ -81,13 +63,36 @@
     "supertest": "^4.0.2",
     "wait-until": "0.0.2"
   },
-  "repository": "https://github.com/davesag/competing-services-example.git",
-  "bugs": {
-    "url": "https://github.com/davesag/competing-services-example/issues"
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "proseWrap": "never"
   },
-  "homepage": "https://github.com/davesag/competing-services-example#README",
-  "dependencies": {
-    "amqp-simple-pub-sub": "^1.0.8"
+  "lint-staged": {
+    "**/*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/index.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "all": true,
+    "cache": true
   },
   "husky": {
     "hooks": {
