@@ -4,6 +4,7 @@ A simple example of how to use the [`amqp-simple-pub-sub`](https://github.com/da
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/davesag/competing-services-example.svg)](https://greenkeeper.io/)
 
+<!-- prettier-ignore -->
 | Branch | Status | Coverage | Notes |
 | ------ | ------ | -------- | ----- |
 | `develop` | [![CircleCI](https://circleci.com/gh/davesag/competing-services-example/tree/develop.svg?style=svg)](https://circleci.com/gh/davesag/competing-services-example/tree/develop) |  [![codecov](https://codecov.io/gh/davesag/competing-services-example/branch/develop/graph/badge.svg)](https://codecov.io/gh/davesag/competing-services-example) | Work in progress |
@@ -11,9 +12,9 @@ A simple example of how to use the [`amqp-simple-pub-sub`](https://github.com/da
 
 ## See Also
 
-* [itnext.io/connecting-competing-microservices-using-rabbitmq](https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6)
-* [`amqp-simple-pub-sub`](https://github.com/davesag/amqp-simple-pub-sub)
-* [`amqp-delegate`](https://github.com/davesag/amqp-delegate)
+- [itnext.io/connecting-competing-microservices-using-rabbitmq](https://itnext.io/connecting-competing-microservices-using-rabbitmq-28e5269861b6)
+- [`amqp-simple-pub-sub`](https://github.com/davesag/amqp-simple-pub-sub)
+- [`amqp-delegate`](https://github.com/davesag/amqp-delegate)
 
 ## To Run
 
@@ -31,16 +32,20 @@ You can `crtl-c` when you get tired of watching it.
 
 ### Prerequisites
 
-* [NodeJS](htps://nodejs.org), version 10.15.1 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
-* [Docker](https://www.docker.com) (Use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
+- [NodeJS](htps://nodejs.org), version 10.15.3 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
+- [Docker](https://www.docker.com) (Use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
 
 ### Initialisation
 
-    npm install
+```
+npm install
+```
 
 ### To Start the queue server for integration testing.
 
-    docker-compose up -d
+```
+docker-compose up -d
+```
 
 Runs Rabbit MQ.
 
@@ -48,11 +53,14 @@ Runs Rabbit MQ.
 
 ### Test it
 
-* `npm test` — runs the unit tests (quick and does not need rabbit mq running)
+- `npm test` — runs the unit tests (quick and does not need `rabbitmq` running)
+- `npm run test:integration` - runs the integration tests (you need to have `rabbitmq` running)
 
 ### Lint it
 
-    npm run lint
+```
+npm run lint
+```
 
 ## Contributing
 
