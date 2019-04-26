@@ -34,4 +34,4 @@ node_modules/
 .env
 
 # macOS Desktop cache files
-.DS_Source
+.DS_Store
