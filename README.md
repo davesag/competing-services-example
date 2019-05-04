@@ -54,7 +54,6 @@ Runs Rabbit MQ.
 ### Test it
 
 - `npm test` — runs the unit tests (quick and does not need `rabbitmq` running)
-- `npm run test:integration` - runs the integration tests (you need to have `rabbitmq` running)
 
 ### Lint it
 
