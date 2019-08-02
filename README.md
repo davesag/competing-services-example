@@ -1,14 +1,6 @@
 # competing-services-example
 
-A simple example of how to use the [`amqp-simple-pub-sub`](https://github.com/davesag/amqp-simple-pub-sub) library to implement competing micro-services.
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/davesag/competing-services-example.svg)](https://greenkeeper.io/)
-
-<!-- prettier-ignore -->
-| Branch | Status | Coverage | Notes |
-| ------ | ------ | -------- | ----- |
-| `develop` | [![CircleCI](https://circleci.com/gh/davesag/competing-services-example/tree/develop.svg?style=svg)](https://circleci.com/gh/davesag/competing-services-example/tree/develop) |  [![codecov](https://codecov.io/gh/davesag/competing-services-example/branch/develop/graph/badge.svg)](https://codecov.io/gh/davesag/competing-services-example) | Work in progress |
-| `master` | [![CircleCI](https://circleci.com/gh/davesag/competing-services-example/tree/master.svg?style=svg)](https://circleci.com/gh/davesag/competing-services-example/tree/master) |  [![codecov](https://codecov.io/gh/davesag/competing-services-example/branch/master/graph/badge.svg)](https://codecov.io/gh/davesag/competing-services-example) | Latest release |
+An example of how to use the [`amqp-simple-pub-sub`](https://github.com/davesag/amqp-simple-pub-sub) library to implement competing micro-services.
 
 ## See Also
 
@@ -18,32 +10,46 @@ A simple example of how to use the [`amqp-simple-pub-sub`](https://github.com/da
 
 ## To Run
 
-Clone this repo to your local machine, then, from within the project folder:
+1. Ensure you have [Docker](https://www.docker.com) installed.
+2. Clone this repo to your local machine, then,
+3. From within the project folder:
 
-```
-docker-compose up -d
+   ```sh
+   docker-compose up -d
+   ```
 
-npm start
-```
+4. Wait a few seconds for RabbitMQ to start, then:
 
-You can `crtl-c` when you get tired of watching it.
+   ```sh
+   npm start
+   ```
+
+5. You can `crtl-c` when you get tired of watching it.
 
 ## Development
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/davesag/competing-services-example.svg)](https://greenkeeper.io/)
+
+<!-- prettier-ignore -->
+| Branch | Status | Coverage | Notes |
+| ------ | ------ | -------- | ----- |
+| `develop` | [![CircleCI](https://circleci.com/gh/davesag/competing-services-example/tree/develop.svg?style=svg)](https://circleci.com/gh/davesag/competing-services-example/tree/develop) |  [![codecov](https://codecov.io/gh/davesag/competing-services-example/branch/develop/graph/badge.svg)](https://codecov.io/gh/davesag/competing-services-example) | Work in progress |
+| `master` | [![CircleCI](https://circleci.com/gh/davesag/competing-services-example/tree/master.svg?style=svg)](https://circleci.com/gh/davesag/competing-services-example/tree/master) |  [![codecov](https://codecov.io/gh/davesag/competing-services-example/branch/master/graph/badge.svg)](https://codecov.io/gh/davesag/competing-services-example) | Latest release |
+
 ### Prerequisites
 
-- [NodeJS](htps://nodejs.org), version 10.15.3 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
+- [NodeJS](htps://nodejs.org), version 10.16.1 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
 - [Docker](https://www.docker.com) (Use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
 
 ### Initialisation
 
-```
+```sh
 npm install
 ```
 
 ### To Start the queue server for integration testing.
 
-```
+```sh
 docker-compose up -d
 ```
 
@@ -54,11 +60,10 @@ Runs Rabbit MQ.
 ### Test it
 
 - `npm test` — runs the unit tests (quick and does not need `rabbitmq` running)
-- `npm run test:integration` - runs the integration tests (you need to have `rabbitmq` running)
 
 ### Lint it
 
-```
+```sh
 npm run lint
 ```
 
