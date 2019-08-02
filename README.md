@@ -1,6 +1,6 @@
 # competing-services-example
 
-A simple example of how to use the [`amqp-simple-pub-sub`](https://github.com/davesag/amqp-simple-pub-sub) library to implement competing micro-services.
+An example of how to use the [`amqp-simple-pub-sub`](https://github.com/davesag/amqp-simple-pub-sub) library to implement competing micro-services.
 
 ## See Also
 
@@ -11,15 +11,20 @@ A simple example of how to use the [`amqp-simple-pub-sub`](https://github.com/da
 ## To Run
 
 1. Ensure you have [Docker](https://www.docker.com) installed.
-2. Clone this repo to your local machine, then, from within the project folder:
+2. Clone this repo to your local machine, then,
+3. From within the project folder:
 
-```
-docker-compose up -d
+   ```sh
+   docker-compose up -d
+   ```
 
-npm start
-```
+4. Wait a few seconds for RabbitMQ to start, then:
 
-3. You can `crtl-c` when you get tired of watching it.
+   ```sh
+   npm start
+   ```
+
+5. You can `crtl-c` when you get tired of watching it.
 
 ## Development
 
@@ -33,18 +38,18 @@ npm start
 
 ### Prerequisites
 
-- [NodeJS](htps://nodejs.org), version 10.16.0 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
+- [NodeJS](htps://nodejs.org), version 10.16.1 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
 - [Docker](https://www.docker.com) (Use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
 
 ### Initialisation
 
-```
+```sh
 npm install
 ```
 
 ### To Start the queue server for integration testing.
 
-```
+```sh
 docker-compose up -d
 ```
 
@@ -58,7 +63,7 @@ Runs Rabbit MQ.
 
 ### Lint it
 
-```
+```sh
 npm run lint
 ```
 
