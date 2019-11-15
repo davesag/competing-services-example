@@ -1,6 +1,6 @@
 {
   "name": "@davesag/competing-services-example",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An example of how to use the AMQP-Simple-PubSub library to implement competing micro-services",
   "author": "Dave Sag <davesag@gmail.com>",
   "type": "commonjs",
