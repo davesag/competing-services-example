@@ -38,7 +38,7 @@ An example of how to use the [`amqp-simple-pub-sub`](https://github.com/davesag/
 
 ### Prerequisites
 
-- [NodeJS](htps://nodejs.org), version 10.16.1 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
+- [NodeJS](htps://nodejs.org), version 10.16.3 (LTS) or better (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
 - [Docker](https://www.docker.com) (Use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
 
 ### Initialisation
