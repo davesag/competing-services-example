@@ -46,7 +46,7 @@
     "test:mutants": "NODE_ENV=test npx stryker run"
   },
   "dependencies": {
-    "amqp-simple-pub-sub": "^1.0.9"
+    "amqp-simple-pub-sub": "^1.0.10"
   },
   "devDependencies": {
     "@stryker-mutator/core": "^2.3.0",
