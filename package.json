@@ -2,12 +2,22 @@
   "name": "@davesag/competing-services-example",
   "version": "1.0.7",
   "description": "An example of how to use the AMQP-Simple-PubSub library to implement competing micro-services",
-  "main": "src/index.js",
   "author": "Dave Sag <davesag@gmail.com>",
+  "type": "commonjs",
   "license": "MIT",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/davesag"
+  },
+  "private": true,
+  "main": "src/index.js",
   "engines": {
     "node": ">= 10.15.3",
     "npm": ">= 6.5.0"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "test"
   },
   "keywords": [
     "amqp",
@@ -78,6 +88,11 @@
       "git add"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "nyc": {
     "check-coverage": true,
     "per-file": true,
@@ -97,10 +112,5 @@
     ],
     "all": true,
     "cache": true
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
