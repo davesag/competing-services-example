@@ -5,6 +5,6 @@ module.exports = {
   rules: {
     'padded-blocks': 0,
     'no-unused-expressions': 0,
-    'no-unused-vars': 1
+    'no-unused-vars': [1, { "varsIgnorePattern": "^_" }]
   }
 }

@@ -7,7 +7,7 @@ describe('ImageMetaData', () => {
   const mockGenericSubscriber = sinon.spy()
   const mockMakeHandler = sinon.spy()
 
-  const imageMetaData = proxyquire('../../../src/ImageMetaData', {
+  const _imageMetaData = proxyquire('../../../src/ImageMetaData', {
     '../genericSubscriber': mockGenericSubscriber,
     './makeHandler': mockMakeHandler
   })
