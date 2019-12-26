@@ -7,7 +7,7 @@ describe('ImageOCR', () => {
   const mockGenericSubscriber = sinon.spy()
   const mockMakeHandler = sinon.spy()
 
-  const imageOCR = proxyquire('../../../src/ImageOCR', {
+  const _imageOCR = proxyquire('../../../src/ImageOCR', {
     '../genericSubscriber': mockGenericSubscriber,
     './makeHandler': mockMakeHandler
   })
