@@ -38,7 +38,7 @@ An example of how to use the [`amqp-simple-pub-sub`](https://github.com/davesag/
 
 ### Prerequisites
 
-- [NodeJS](htps://nodejs.org), 15.1.0+ (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.) You must use npm version 7.0.8 or better.
+- [NodeJS](htps://nodejs.org), 8.10.0+ (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
 - [Docker](https://www.docker.com) (Use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
 
 ### Initialisation
@@ -55,7 +55,7 @@ docker-compose up -d
 
 Runs Rabbit MQ.
 
-`ctrl-c` to stop it.
+Run `docker-compose down` to stop it.
 
 ### Test it
 
