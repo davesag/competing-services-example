@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['standard', 'prettier', 'prettier/standard'],
-  plugins: ['prettier', 'standard', 'mocha'],
+  plugins: ['prettier', 'mocha'],
   parserOptions: {
     sourceType: 'module'
   },
