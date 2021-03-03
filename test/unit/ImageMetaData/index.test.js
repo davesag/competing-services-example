@@ -13,9 +13,6 @@ describe('ImageMetaData', () => {
   })
 
   it('called genericSubscriber', () => {
-    expect(mockGenericSubscriber).to.have.been.calledWith(
-      META_DATA_QUEUE,
-      mockMakeHandler
-    )
+    expect(mockGenericSubscriber).to.have.been.calledWith(META_DATA_QUEUE, mockMakeHandler)
   })
 })

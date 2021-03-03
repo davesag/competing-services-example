@@ -13,9 +13,6 @@ describe('ImageOCR', () => {
   })
 
   it('called genericSubscriber', () => {
-    expect(mockGenericSubscriber).to.have.been.calledWith(
-      OCR_QUEUE,
-      mockMakeHandler
-    )
+    expect(mockGenericSubscriber).to.have.been.calledWith(OCR_QUEUE, mockMakeHandler)
   })
 })
