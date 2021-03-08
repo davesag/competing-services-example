@@ -48,7 +48,7 @@
     "amqp-simple-pub-sub": "^1.0.12"
   },
   "devDependencies": {
-    "ajv": "^7.0.3",
+    "ajv": "^7.2.1",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^7.11.0",
