@@ -45,7 +45,7 @@
     "snyk-protect": "snyk protect"
   },
   "dependencies": {
-    "amqp-simple-pub-sub": "^1.0.12"
+    "amqp-simple-pub-sub": "^1.1.1"
   },
   "devDependencies": {
     "ajv": "^7.0.3",
