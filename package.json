@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "ajv": "^8.1.0",
-    "chai": "^4.2.0",
+    "chai": "^4.3.5",
     "chai-as-promised": "^7.1.1",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.0.0",
