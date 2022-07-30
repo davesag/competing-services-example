@@ -34,11 +34,11 @@ An example of how to use the [`amqp-simple-pub-sub`](https://github.com/davesag/
 | Branch | Status | Coverage | Audit | Notes |
 | ------ | ------ | -------- | ----- | ----- |
 | `develop` | [![CircleCI](https://circleci.com/gh/davesag/competing-services-example/tree/develop.svg?style=svg)](https://circleci.com/gh/davesag/competing-services-example/tree/develop) |  [![codecov](https://codecov.io/gh/davesag/competing-services-example/branch/develop/graph/badge.svg)](https://codecov.io/gh/davesag/competing-services-example) | [![Vulnerabilities](https://snyk.io/test/github/davesag/competing-services-example/develop/badge.svg)](https://snyk.io/test/github/davesag/competing-services-example/develop) | Work in progress |
-| `master` | [![CircleCI](https://circleci.com/gh/davesag/competing-services-example/tree/master.svg?style=svg)](https://circleci.com/gh/davesag/competing-services-example/tree/master) |  [![codecov](https://codecov.io/gh/davesag/competing-services-example/branch/master/graph/badge.svg)](https://codecov.io/gh/davesag/competing-services-example) | [![Vulnerabilities](https://snyk.io/test/github/davesag/competing-services-example/master/badge.svg)](https://snyk.io/test/github/davesag/competing-services-example/master) | Latest release |
+| `main` | [![CircleCI](https://circleci.com/gh/davesag/competing-services-example/tree/main.svg?style=svg)](https://circleci.com/gh/davesag/competing-services-example/tree/main) |  [![codecov](https://codecov.io/gh/davesag/competing-services-example/branch/main/graph/badge.svg)](https://codecov.io/gh/davesag/competing-services-example) | [![Vulnerabilities](https://snyk.io/test/github/davesag/competing-services-example/main/badge.svg)](https://snyk.io/test/github/davesag/competing-services-example/main) | Latest release |
 
 ### Prerequisites
 
-- [NodeJS](htps://nodejs.org), 8.10.0+ (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
+- [NodeJS](https://nodejs.org), 8.10.0+ (I use [`nvm`](https://github.com/creationix/nvm) to manage Node versions — `brew install nvm`.)
 - [Docker](https://www.docker.com) (Use [Docker for Mac](https://docs.docker.com/docker-for-mac/), not the homebrew version)
 
 ### Initialisation
@@ -47,7 +47,7 @@ An example of how to use the [`amqp-simple-pub-sub`](https://github.com/davesag/
 npm install
 ```
 
-### To Start the queue server for integration testing.
+### To Start the queue server for integration testing
 
 ```sh
 docker-compose up -d
