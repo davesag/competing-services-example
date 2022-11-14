@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@snyk/protect": "^1.981.0",
-    "ajv": "^8.11.0",
+    "ajv": "^8.11.2",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^8.3.6",
